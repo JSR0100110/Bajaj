@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REST API Response</title>
+</head>
+<body>
+    <h1>REST API Response</h1>
+    <p>Status: <%= status %></p>
+    <p>User ID: <%= user_id %></p>
+    <p>College Email ID: <%= college_email_id %></p>
+    <p>College Roll Number: <%= college_roll_number %></p>
+
+    <h2>Arrays:</h2>
+
+    <h3>Numbers:</h3>
+    <ul>
+        <% for (let i = 0; i < num_array.length; i++) { %>
+            <li><%= num_array[i] %></li>
+        <% } %>
+    </ul>
+
+    <h3>Alphabets:</h3>
+    <ul>
+        <% for (let i = 0; i < alphabet_array.length; i++) { %>
+            <li><%= alphabet_array[i] %></li>
+        <% } %>
+    </ul>
+
+    <p>Highest Alphabet: <%= highest_alphabet %></p>
+</body>
+</html>
